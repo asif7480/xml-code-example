@@ -1,0 +1,38 @@
+XSD ----------> XML Schema Definition
+
+What is a well form document?
+
+1. Document must be have xml prolog at top.
+2. Document must contain a root element.
+3. Opening and ending tag must match.
+4. Single tags must be closed properly.
+5. Single tags does not have ending or closing tags.
+6. Elements must be nested.
+7. Attributes must be quoted.
+8. Must use entities for special characters such as > has entity &gt, < has entity &lt.
+
+What DTD cannot do?
+1. DTD doesn't have any concepts of data types such as name element must have string value instead of number or boolean.
+2. DTD doesn't have concepts of range. 
+
+Types of element in xml schema?
+Simple Types:
+    <name>ABC</name>
+
+Complex Types:
+    1. Empty element.
+        <name id="1001">
+    2. Element containing other elements.
+        <person>
+            <name></name>
+        </person>
+    3. Element containing other elements and text.
+        <person>
+            My name is
+            <name>ABC</name>
+        </person>
+
+sites for formatting and validating xml:
+1. freeformatter.com
+2. liquid-technologies.com/online-xsd-validator 
+3. ExtendsClass xsd to xml converter

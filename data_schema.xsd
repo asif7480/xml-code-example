@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+<xsd:schema 
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    attributeFormDefault="unqualified"
+    elementFormDefault="qualified"   
+    >
+    <!-- the above means that the xml instance which is in our case data.xml all present elements must be defined in xml schema and qualify xml schema -->   
+    
+    
+    <xsd:element name="person">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="firstname"/>
+                <xsd:element name="lastname"/>
+                <xsd:element name="contact"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+</xsd:schema>
