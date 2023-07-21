@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE bookData [
+    <!ELEMENT bookData (book*)>
+    <!ELEMENT book ((title*|title|title+), author, pages)>
+    <!ELEMENT title (#PCDATA|title_one)*>
+    <!ELEMENT title_one (#PCDATA)>
+    <!ELEMENT author (#PCDATA)>
+    <!ELEMENT pages (#PCDATA)>
+]>
+
+<bookData>
+    <book>
+        <title>
+            <title_one>fasf</title_one>
+        </title>
+        <author>anyPerson</author>
+        <pages>345</pages>
+    </book>
+
+    <book>
+        <title>abc</title>
+        <title>def</title>
+        <title>ghi</title>
+        <author>anyPerson</author>
+        <pages>345</pages>
+    </book>
+
+
+</bookData>

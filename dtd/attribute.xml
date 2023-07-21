@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE data [
+    <!ELEMENT data (name, class, contact) >
+    <!ELEMENT name (#PCDATA) >
+    <!ELEMENT class (#PCDATA) >
+    <!ELEMENT contact (#PCDATA) >
+
+    <!-- <!ATTLIST class section CDATA "A" > -->
+    <!-- <!ATTLIST class section CDATA #REQUIRED > -->
+    <!-- <!ATTLIST class section CDATA #IMPLIED > -->
+    <!-- <!ATTLIST class section CDATA #FIXED "B" > -->
+    <!ATTLIST class section (A|B) "A" >
+
+    <!ENTITY EqLt "Less than and equal to" >
+]>
+
+<data>
+    <name>abc</name>
+    <class section="A">14</class>
+    <contact>&EqLt;</contact>
+</data>
